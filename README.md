@@ -54,7 +54,7 @@ Dieser Abschnitt beschreibt die Skripte zur Sammlung, Aufbereitung und Zusammenf
 
     Dieses R-Skript verarbeitet die Produktdetails-Datei. Es bereinigt die Daten und identifiziert Amazon-Eigenmarken. Anschließend wird ein stratifiziertes Stichprobenverfahren angewendet, um einen ausgewogenen Datensatz von 400 Produkten für die Hauptanalyse zu erstellen. Dieser Datensatz umfasst jeweils 200 Produkte, die von Amazon verkauft werden, und 200 Produkte von Drittanbietern, inklusive aller 94 identifizierten Eigenmarken.
 
-5. __Pythonscript: *Getting Data via Sistrix API*__
+5. __Pythonscript: *Getting Visibility Data via Sistrix API*__
 
     Mit diesem Skript werden die wöchentlichen Sichtbarkeitsdaten für die ausgewählten 400 Produkte von der Sistrix-API abgerufen. Die Daten umfassen den Zeitraum vom 1. Juli 2023 bis zum 24. Februar 2024 und wurden für fünf Länder (Deutschland, Frankreich, Italien, Spanien, Großbritannien) gesammelt. Aufgrund der hohen Anzahl von API-Anfragen, die zu Timeout Fehlern und fehlenden Credits führen können, ist dieses Skript darauf ausgelegt, in mehreren Schritten mit manuell angepassten Funktionsaufrufen ausgeführt zu werden.
 
